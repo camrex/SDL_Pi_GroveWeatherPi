@@ -13,17 +13,15 @@ except ImportError:
         import config
 
 
-import TemperatureHumidityGraph 
-import PowerCurrentGraph 
-import PowerVoltageGraph 
-import BarometerLightningGraph 
+import TemperatureHumidityGraph
+import PowerCurrentGraph
+import PowerVoltageGraph
+import BarometerLightningGraph
+
 
 def doAllGraphs():
-
-	if (config.enable_MySQL_Logging == True):	
-
-		BarometerLightningGraph.BarometerLightningGraph('test', 10, 0)
-		TemperatureHumidityGraph.TemperatureHumidityGraph('test', 10, 0)
-		PowerCurrentGraph.PowerCurrentGraph('test', 10, 0)
-		PowerVoltageGraph.PowerVoltageGraph('test', 10, 0)
-
+    if (config.enable_MySQL_Logging is True):
+        BarometerLightningGraph.BarometerLightningGraph('test', 10, 0)
+        TemperatureHumidityGraph.TemperatureHumidityGraph('test', 10, 0)
+        PowerCurrentGraph.PowerCurrentGraph('test', 10, 0)
+        PowerVoltageGraph.PowerVoltageGraph('test', 10, 0)

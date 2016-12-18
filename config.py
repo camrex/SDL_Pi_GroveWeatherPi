@@ -7,15 +7,11 @@
 
 mailUser = "yourusename"
 mailPassword = "yourmailpassword"
-
-notifyAddress ="you@example.com"
-
+notifyAddress = "you@example.com"
 fromAddress = "yourfromaddress@example.com"
-
 textnotifyAddress = "yourphonenumber@yourprovider"
 
-#MySQL Logging and Password Information
-
+# MySQL Logging and Password Information
 enable_MySQL_Logging = True
 MySQL_Password = "password"
 
@@ -24,22 +20,16 @@ enable_WLAN_Detection = True
 PingableRouterAddress = "192.168.1.1"
 
 # WeatherUnderground Station
-
 WeatherUnderground_Present = False
 WeatherUnderground_StationID = "KWXXXXX"
 WeatherUnderground_StationKey = "YYYYYYY"
 
-
-
 # for barometeric pressure - needed to calculate sealevel equivalent - set your weatherstation elevation here
-
 BMP280_Altitude_Meters = 648.0
 
 # device present global variables
-
 Lightning_Mode = False
 SolarPower_Mode = False
-
 TCA9545_I2CMux_Present = False
 SunAirPlus_Present = False
 AS3935_Present = False
